@@ -1,6 +1,6 @@
 {
-  "name": "ds-cli",
-  "version": "0.0.1",
+  "name": "kangaroo-cli",
+  "version": "0.0.1-beta1",
   "description": "A cli for webpack5 and vue2",
   "main": "index.js",
   "bin": {
