@@ -1,0 +1,42 @@
+{
+  "name": "ds-cli",
+  "version": "0.0.1",
+  "description": "A cli for webpack5 and vue2",
+  "main": "index.js",
+  "bin": {
+    "ds-cli": "bin/ds-cli"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "gitRepo": "https://github.com/Sihan-Tan/vue-base.git",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "keywords": [
+    "vue-cli",
+    "vue/cli",
+    "vue-base",
+    "vue-templates",
+    "vue-create"
+  ],
+  "author": "sihan-tan",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.12.5",
+    "@darkobits/lolcatjs": "^3.1.3",
+    "commander": "^5.1.0",
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.4.0",
+    "inquirer": "^7.1.0",
+    "json2ts": "^0.0.7",
+    "minimist": "^1.2.5",
+    "ora": "^4.0.4",
+    "shelljs": "^0.8.4",
+    "slash": "^3.0.0"
+  }
+}
