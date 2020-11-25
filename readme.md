@@ -9,13 +9,25 @@
 `ds-cli create appName`
 create a webpack5 & vue2 project
 
-# Todo
+`ds-cli init user -c -s -r -a`
 
-`ds-cli module user`
-create some file in these folders for this project
+- -c component
+- -s store
+- -r route
+- -a api
+
+Create some file in these folders for this project & will import them;But you need use it at the root folder;
+
+if you just input ds-cli init user, it will just create a view file in the folder.
 
 - views/user
-  - views/user/index.vue
+  - index.vue
+- components/user
+  - Index.vue
 - store/modules/user.js
 - routes/user.js
 - api/user.js
+
+# Call help
+
+`ds-cli -h` or `ds-cli --help`

@@ -1,6 +1,6 @@
 {
   "name": "kangaroo-cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A cli for webpack5 and vue2",
   "main": "index.js",
   "bin": {
@@ -8,8 +8,14 @@
   },
   "files": [
     "bin",
-    "lib"
+    "lib",
+    "readme.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sihan-Tan/ds-cli.git"
+  },
+  "homepage": "https://github.com/Sihan-Tan/ds-cli#readme",
   "gitRepo": "https://github.com/Sihan-Tan/vue-base.git",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
