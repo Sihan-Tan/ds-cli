@@ -27,7 +27,6 @@ program
   .option('-d, --default', 'Skip prompts and use default preset')
   .option('-f, --force', 'Overwrite target directory if it already exists')
   .action((name, cmd) => {
-    console.log(name, cleanArgs(cmd));
     if (minimist(process.argv.slice(3))._.length > 1) {
       console.log(
         chalk.yellow(
@@ -36,6 +35,18 @@ program
       );
     }
     require('../lib/create')(name, cleanArgs(cmd));
+  });
+
+// 模块命令
+program
+  .command('init <view-name>')
+  .description('create a view power for views, routes, api and components')
+  .option('-r, --route', 'create a route file')
+  .option('-a, --api', 'create a api file')
+  .option('-s, --store', 'create a store file')
+  .option('-c, --component', 'create a component folder')
+  .action((name, cmd) => {
+    require('../lib/init')(name, cleanArgs(cmd));
   });
 
 program
